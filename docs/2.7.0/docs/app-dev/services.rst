@@ -269,9 +269,9 @@ User management is available in Canton-enabled drivers and not yet available in 
 Identity Provider Config Service
 ================================
 
-Use **identity provider config service** to define and manage the parameters of an external IDP systems configured to issue tokens for a participant node.
+Use the **identity provider config service** to define and manage the parameters of an external IDP system configured to issue tokens for a participant node.
 
-The **identity provider config service** makes it possible for participant node administrators to set up and manage additional identity providers at runtime. This allows using access tokens from identity providers unknown at deployment time. When an identity provider is configured, independent IDP administrators can manage their own set of parties and users.
+The **identity provider config service** allows participant node administrators to set up and manage additional identity providers at runtime. This means that the node can accept access tokens from identity providers unknown at deployment time. When an identity provider is configured, independent IDP administrators can manage their own set of parties and users.
 
 Such parties and users have a matching identity_provider_id defined and are inaccessible to administrators from other identity providers. A user will only be authenticated if the corresponding JWT token is issued by the appropriate identity provider. Users and parties without identity_provider_id defined are assumed to be using the default identity provider, which is configured statically when the participant node is deployed..
 
